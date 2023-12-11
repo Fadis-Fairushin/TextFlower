@@ -20,6 +20,6 @@ TextFlower - a program that can choose a letter name for a color in response to 
 
 ---
 
-![![Screenshot программы](image.png)
+![Screenshot программы](image.png)
 
 *Figure 1. Screenshot of the program*
