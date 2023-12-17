@@ -27,7 +27,7 @@ def search_string():
 
         if not found:
             result_text.delete('1.0', tk.END)
-            result_text.insert(tk.END, "Not found")
+            result_text.insert(tk.END, "Не найдено")
     except Exception as e:
         result_text.delete('1.0', tk.END)
         result_text.insert(tk.END, f"File reading error: {str(e)}")
@@ -57,13 +57,13 @@ style.configure("TButton", font=("Helvetica", 12))
 top_frame = tk.Frame(window, bg="#FFB6C1")
 bottom_frame = tk.Frame(window, bg="#FFB6C1")
 
-label = ttk.Label(top_frame, text="What do you want to find?")
+label = ttk.Label(top_frame, text="Что ты хочешь найти??")
 label.pack(pady=10)
 
 entry = ttk.Entry(top_frame)
 entry.pack()
 
-button = ttk.Button(top_frame, text="Search", command=search_string, style="TButton")
+button = ttk.Button(top_frame, text="Найти", command=search_string, style="TButton")
 style.map("TButton", foreground=[('active', '#FF4500'), ('pressed', '#FF6347')], background=[('active', '#FFA07A'), ('pressed', '#FA8072')])
 button.pack(pady=10)
 
